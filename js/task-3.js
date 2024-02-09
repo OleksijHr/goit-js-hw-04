@@ -1,3 +1,13 @@
-function getElementWidth(content, padding, border) {
-    return Number.parseFloat(content) + Number.parseFloat(padding) * 2 + Number.parseFloat(border) * 2;
-}
+const profile = {
+    username: "Jacob",
+    playTime: 300,
+    changeUsername(newName) {
+        return this.username = newName;
+    },
+    updatePlayTime(hours) {
+        this.playTime += hours;
+    },
+    getInfo() {
+        return `${this.username} has ${this.playTime} active hours!`;
+    }
+};

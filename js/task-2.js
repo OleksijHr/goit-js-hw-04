@@ -1,4 +1,7 @@
-function getShippingMassage(country, price, deliveryFee) {
-    let totalPrice = price + deliveryFee;
-    return `Shipping to ${country} will cost ${totalPrice} credits`;
+function calcAverageCalories(days) {
+    let result = 0;
+    for (const day of days) {
+        result += day.calories;
+    }
+    return result / 7;
 }
